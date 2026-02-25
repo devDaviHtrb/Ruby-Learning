@@ -40,3 +40,12 @@ puts HelloWorld.map(&:upcase).join("1")
 
 frase = "Hello, World"
 HelloWorld = frase.split("")
+
+numeros = [1, 2, 3, 4, 5, 6]
+pares = numeros.select { |n| n.even? }
+#select cria um array temporário com os elemetos que satisfazem a condição
+
+
+numeros = [1, 2, 3, 4]
+soma = numeros.reduce(0) { |acumulador, n| acumulador + n }
+#reduce cria um array temporario que reduz um array, o acumulador é o resultado das iterações e n o elemento da iteração atual e o parametro 0 é o valor inicial do acumulador
